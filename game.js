@@ -1,4 +1,4 @@
-let step = true, //step player
+let step = true, //step players
 playerCountBalls = 10,
 compCountBalls = 10,
 playBtn = document.querySelector('.play'),
