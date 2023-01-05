@@ -68,15 +68,15 @@ function compGuess() {
 }
 
 
-//determination of players' move
+//determination of players' move.
 function stepPlayers(step) {
   console.log(step);
-  compGuess(); //guesses the computer
-  if (step) { //if the player moves
+  compGuess(); //guesses the computer.
+  if (step) { //if the player moves.
     playText.innerHTML = messages.step_456;
     playerCountBtn.addEventListener('click', function st_pl() {
-      guessPlayerBalls = +playerCount.value; //geting values from fields
-      //validation of the entered value
+      guessPlayerBalls = +playerCount.value; //geting values from fields.
+      //validation of the entered value.
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
        playText.innerHTML = messages.wrong_bet;
        setTimeout(() => {
