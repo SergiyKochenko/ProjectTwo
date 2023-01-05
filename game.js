@@ -15,13 +15,13 @@ guessCompBalls,
 guessPlayerBalls,
 compEvenOdd,
 messages = {
-  'wrong_bet': '<span style="color: red; font-size: 1.5em;">Wrong bet</span>',
-  'step_456': 'Guess Woody! <br>Place your bet and choose Odd/Even',
-  'win_456': 'Over game! The winner is Woody!',
-  'res_456': 'Woody made his bet',
-  'step_001': 'Guessing Duck! <br>Place your bet',
-  'win_001': 'Over game! The winner is Duck!',
-  'res_001': 'Duck made his bet'
+  'wrong_bet': '<a class="fa" style="color: red; font-size: 1.5em;">Wrong bet</a>',
+  'step_456': '<a class="fa">Guess Woody! <br>Place your bet and choose Odd/Even</a>',
+  'win_456': '<a class="fa">Over game! The winner is Woody!</a>',
+  'res_456': '<a class="fa">Woody made his bet</a>',
+  'step_001': '<a class="fa">Guessing Duck! <br>Place your bet</a>',
+  'win_001': '<a class="fa">Over game! The winner is Duck!</a>',
+  'res_001': '<a class="fa">Duck made his bet</a>'
 };
 
 let compTotal = document.querySelector('.comp_total'),
@@ -136,13 +136,13 @@ oddBtn.addEventListener('click', function () {
 //recording rates in table
 function writeBets(messBet, countBalls, choices) {
   let item = document.createElement('div');
-  item.innerHTML = `${messBet} <strong>${countBalls}</strong> and chose ${choices ? 'odd' : 'even'}`;
+  item.innerHTML = `${messBet} <strong>${countBalls}</strong> <a class="fa">and chose</a> ${choices ? '<a class="fa">odd</a>' : '<a class="fa">even</a>'}`;
   results.append(item);
 }
 //records of moves results
 function writeResultStep(mess, countBalls) {
   let item = document.createElement('div');
-  item.innerHTML = `${mess} <strong>${countBalls}</strong> pc.`;
+  item.innerHTML = `${mess} <strong>${countBalls}</strong> <a class="fa">pc.</a>`;
   results.append(item);
 }
 
@@ -178,7 +178,7 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     }
     //message to the table about the results
     setTimeout(() => {
-      writeResultStep('Woody win', valuePlayer);
+      writeResultStep('<a class="fa">Woody win</a>', valuePlayer);
     }, 500);
     
   }
@@ -203,7 +203,7 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     }
     //message to the table about the results
     setTimeout(() => {
-      writeResultStep('Duck win', valuePlayer);
+      writeResultStep('<a class="fa">Duck win</a>', valuePlayer);
     }, 500);
     
   }

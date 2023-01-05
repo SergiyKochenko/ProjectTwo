@@ -9,7 +9,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  background: #06778a;
+  background: #1daf9e;
   font-family: "Open Sans", sans-serif;
 }
 .game {
@@ -91,10 +91,10 @@ input[disabled] {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   border-radius: 4px;
-  color: #06778a;
+  color: #1daf9e;
 }
 .hide {
   display: none;
