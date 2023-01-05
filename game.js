@@ -133,7 +133,7 @@ oddBtn.addEventListener('click', function () {
 });
 
 
-//recording rates in table
+//recording rates in table.
 function writeBets(messBet, countBalls, choices) {
   let item = document.createElement('div');
   item.innerHTML = `${messBet} <strong>${countBalls}</strong> <a class="fa">and chose</a> ${choices ? '<a class="fa">odd</a>' : '<a class="fa">even</a>'}`;
