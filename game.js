@@ -84,7 +84,7 @@ function stepPlayers(step) {
          playerCount.value = '';
        }, 2000);
      } 
-     else { //if passed validation
+     else { //if passed validation.
        playerCountBtn.setAttribute('disabled', 'disabled');
        playerCount.setAttribute('disabled', 'disabled');
        evenBtn.removeAttribute('disabled');
@@ -94,7 +94,7 @@ function stepPlayers(step) {
      }
     });
   }
-  else { //if the computer moves
+  else { //if the computer moves.
      playText.innerHTML = messages.step_001;
      evenBtn.setAttribute('disabled', 'disabled');
      oddBtn.setAttribute('disabled', 'disabled');
@@ -102,8 +102,8 @@ function stepPlayers(step) {
      playerCount.removeAttribute('disabled');
 
     playerCountBtn.addEventListener('click', function st_cp() {
-     guessPlayerBalls = +playerCount.value; //geting values from fields 
-      //validation of the entered value
+     guessPlayerBalls = +playerCount.value; //geting values from fields.
+      //validation of the entered value.
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
        playText.innerHTML = messages.wrong_bet;
        setTimeout(() => {
@@ -111,7 +111,7 @@ function stepPlayers(step) {
          playerCount.value = '';
        }, 2000);
      } 
-      else { //if passed validation
+      else { //if passed validation.
        writeBets(messages.res_001, guessCompBalls, compEvenOdd);
        checkWinner(guessCompBalls, guessPlayerBalls, compEvenOdd, step);
        playerCount.value = '';
@@ -122,7 +122,7 @@ function stepPlayers(step) {
 }
 
 
-//chice of player
+//chice of player.
 evenBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 0, step);
   writeBets(messages.res_456, guessPlayerBalls, 0);
