@@ -56,11 +56,11 @@ function createBalls(playerCount, compCount) {
   playerTotal.innerHTML = playerCount;
 }
 
-//bet by computer
+//bet by computer.
 function compGuess() {
-  //bet by computer randomly from 1 to its number of balls
+  //bet by computer randomly from 1 to its number of balls.
   guessCompBalls = Math.round(Math.random() * (compCountBalls - 1) + 1);
-  //rendom choice of even or odd
+  //rendom choice of even or odd.
   compEvenOdd = Math.round(Math.random());
   console.log('computer bet -' + guessCompBalls);
   if (compEvenOdd) console.log("Computer's chose odd");
