@@ -155,7 +155,7 @@ function disabledButtons() {
   oddBtn.setAttribute('disabled', 'disabled');
 }
 
-//check winner
+//check winner.
 function checkWinner(valueComp, valuePlayer, check, step) {
 // if player moves and I got the computer's bet, or computer moves and the copputer missed my bet
   if ((valueComp % 2 == check && step) || (valuePlayer % 2 != check && !step)) {
