@@ -139,7 +139,7 @@ function writeBets(messBet, countBalls, choices) {
   item.innerHTML = `${messBet} <strong>${countBalls}</strong> <a class="fa">and chose</a> ${choices ? '<a class="fa">odd</a>' : '<a class="fa">even</a>'}`;
   results.append(item);
 }
-//records of moves results
+//records of moves results.
 function writeResultStep(mess, countBalls) {
   let item = document.createElement('div');
   item.innerHTML = `${mess} <strong>${countBalls}</strong> <a class="fa">pc.</a>`;
