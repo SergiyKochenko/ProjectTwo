@@ -67,14 +67,7 @@ function compGuess() {
   else console.log("Computer's chose even");
 }
 
-
-//determination of players' move.
-function stepPlayers(step) {
-  console.log(step);
-  compGuess(); //guesses the computer.
-  if (step) { //if the player moves.
-    playText.innerHTML = messages.step_456;
-    playerCountBtn.addEventListener('click', function st_pl() {
+function st_pl() {
       guessPlayerBalls = +playerCount.value; //geting values from fields.
       //validation of the entered value.
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
@@ -92,7 +85,15 @@ function stepPlayers(step) {
        playerCount.value = '';
        this.removeEventListener('click', st_pl);
      }
-    });
+    }
+
+//determination of players' move.
+function stepPlayers(step) {
+  console.log(step);
+  compGuess(); //guesses the computer.
+  if (step) { //if the player moves.
+    playText.innerHTML = messages.step_456;
+    playerCountBtn.addEventListener('click',  st_pl);
   }
   else { //if the computer moves.
      playText.innerHTML = messages.step_001;
@@ -210,3 +211,10 @@ function checkWinner(valueComp, valuePlayer, check, step) {
   step = !step; //change move
   stepPlayers(step); //record of new move
 }
+// onkeydown "Enter"
+document.querySelector('.player_count').onkeydown = function(event){
+   if(event.keyCode == 13){
+    st_pl()
+   }
+};
+
