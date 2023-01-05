@@ -146,7 +146,7 @@ function writeResultStep(mess, countBalls) {
   results.append(item);
 }
 
-//function of disabling the player's buttons in case of the end of the game
+//function of disabling the player's buttons in case of the end of the game.
 function disabledButtons() {
   playerCountBtn.setAttribute('disabled', 'disabled');
   playerCount.setAttribute('disabled', 'disabled');
