@@ -1,4 +1,4 @@
-let step = true, //step players
+let step = true, //step players.
 playerCountBalls = 10,
 compCountBalls = 10,
 playBtn = document.querySelector('.play'),
@@ -29,7 +29,7 @@ let compTotal = document.querySelector('.comp_total'),
 
 
 
-//start game from begining
+//start game from begining.
 playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
