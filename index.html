@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="eu">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Even/Odd</title>
+  <link rel="shortcut icon" type="image/png" href="img/red-ball.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
 
- <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+
+ <div class="play_text"></div>
+  
+  <div class="game">
+    
+    <div class="items">
+      <div class="item"><img class="comp-img" src="img/001-sad.png" alt=""></div>
+      <div class="item"><img class="comp-bag" src="img/empty.png" alt=""></div>
+      <div class="item">
+        <div class="comp_total"></div>
+      </div>
+    </div>
+    <button class="play">Play</button>
+
+    <div class="items player_items">
+      <div class="item"><img class="player-img" src="img/456-sad.png" alt=""></div>
+      <div class="item"><img class="player-bag" src="img/empty.png" alt=""></div>
+      <div class="item">
+        <div class="player-btns">
+           <div class="player_total"></div>
+          <input type="text" inputmode="numeric" pattern="[0-9]*" class="player_count" disabled>
+          <button class="player_count-btn" disabled>GO</button>
+          <div class="choises-btn">
+            <button class="choice even" disabled>Even</button>
+            <button class="choice odd" disabled>Odd</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+  <div class="game_results"></div>
+  
+  
+  
+  <script src="game.js"></script>
+ 
 </body>
 
 </html>
