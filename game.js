@@ -29,7 +29,7 @@ let compTotal = document.querySelector('.comp_total'),
 
 
 
-//start game from begining.
+//start game from beginning.
 playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
@@ -46,7 +46,7 @@ function play() {
   stepPlayers(step);
 }
 
-//recompute balls and change of bag image
+//recompute balls and change of bag image.
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
     playerBag.setAttribute('src', 'img/empty.png') :
