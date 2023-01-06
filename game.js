@@ -44,6 +44,7 @@ function play() {
   openContents.classList.add('hide');
 
   
+  
   playerCountBalls = 10;
   compCountBalls = 10;
   results.innerHTML = '';
