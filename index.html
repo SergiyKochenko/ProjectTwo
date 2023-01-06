@@ -20,25 +20,34 @@
       border: none;
       text-align: left;
       outline: none;
-      font: size; 15px;
+      font-size: 15px;
+      position: fixed;
     }
     .active,
     .collapsible:hover {
       background-color: #555;
+      
+     
     }
-    .contact {
+    .contents {
       padding: 0 18px;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.2s ease-out;
+      transition: max-height 0.5s ease-out;
       background-color: #f1f1f1;
+      position: absolute;
+      margin: 51px 0 0 0;
+       
     }
   </style>
 </head>
 <body>
-  <button class="collapsible">Open Collapsible</button>
-  <div class="content"></div>
-  <button type="submit" class="rules-btn fa button" id="submit" onclick="rules();">Rules</button>
+  <button class="collapsible fa"><span><img src="img/balls.png" alt=""></span>Open Collapsible: Rules</button>
+  <div class="contents">
+  
+    <div class="fa"><p>How to play even odd game?</p><p>The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</p></div>
+  </div>
+  
  <div class="play_text"></div>
   <div class="game">
     <div class="items">
@@ -79,10 +88,20 @@
   <div class="game_results"></div>
   <script src="game.js"></script>
   <script>
-   
-  function rules() {
-    document.querySelector('.rules-btn').innerHTML = '<div class="rules-card"><p>How to play even odd game?</p><p>The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</p></div>'
-  }
+    
+   let coll = document.getElementsByClassName('collapsible');
+    for(let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        let contents = this.nextElementSibling;
+        if (contents.style.maxHeight) {
+          contents.style.maxHeight = null;
+        } else {
+          contents.style.maxHeight = contents.scrollHeight + 'px'
+        }
+      })
+    }
+  
   
   </script>
 </body>

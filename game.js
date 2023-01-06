@@ -3,7 +3,8 @@ playerCountBalls = 10,
 compCountBalls = 10,
 playBtn = document.querySelector('.play'),
   
-rulesBtn = document.querySelector('.rules-btn'),
+openCollapsible = document.querySelector('.collapsible'),
+openContents = document.querySelector('.contents'),
 
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
@@ -39,8 +40,8 @@ playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
 
-  
-  rulesBtn.classList.add('hide');
+  openCollapsible.classList.add('hide');
+  openContents.classList.add('hide');
 
   
   playerCountBalls = 10;
