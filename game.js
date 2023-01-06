@@ -2,6 +2,9 @@ let step = true, //step players.
 playerCountBalls = 10,
 compCountBalls = 10,
 playBtn = document.querySelector('.play'),
+  
+rulesBtn = document.querySelector('.rules-btn'),
+
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
 playerImg = document.querySelector('.player-img'),
@@ -29,10 +32,17 @@ let compTotal = document.querySelector('.comp_total'),
 
 
 
+
+
 //start game from beginning.
 playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
+
+  
+  rulesBtn.classList.add('hide');
+
+  
   playerCountBalls = 10;
   compCountBalls = 10;
   results.innerHTML = '';
@@ -44,7 +54,12 @@ function play() {
   oddBtn.setAttribute('disabled', 'disabled');
   createBalls(playerCountBalls, compCountBalls);
   stepPlayers(step);
-}
+};
+
+
+
+
+
 
 //recompute balls and change of bag image.
 function createBalls(playerCount, compCount) {
@@ -217,4 +232,5 @@ document.querySelector('.player_count').onkeydown = function(event){
     st_pl()
    }
 };
+
 
