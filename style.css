@@ -15,7 +15,7 @@ body {
 .game {
   width: 100%;
   max-width: 700px;
-  height: 70vh;
+  height: 65vh;/*test*/
   border: 2px solid #fff;
   border-radius: 10px 0 0 10px;
   display: flex;
@@ -126,7 +126,7 @@ input[disabled] {
 }
 .game_results {
   width: 320px;
-  height: 70vh;
+  height: 65vh;/*test*/
   border: 2px solid #fff;
   border-radius: 0 10px 10px 0;
   color: #fff;
@@ -142,7 +142,6 @@ input[disabled] {
   font-size: 16px;
   color: #ff7bba;
 }
-
 .comp_total,
 .player_total {
   text-align: center;
@@ -151,18 +150,32 @@ input[disabled] {
   font-size: 50px;
   display: none;/*for developers purpose only,- remove "display: none;" - you will see the both players score on the play yard*/
 }
-
-
-
-
-
-  
-
-
-
-
-
-
+/* collapse bar*/
+.collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 20px;
+      position: fixed;
+    }
+    .active,
+    .collapsible:hover {
+      background-color: #555; 
+    }
+    .contents {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      background-color: #f1f1f1;
+      position: absolute;
+      margin: 59px 0 0 0;
+    }
 /*media*/
 @media (max-width: 1100px) {
   .game {
@@ -247,4 +260,3 @@ input[disabled] {
   .items .item {
     width: 100%;
   }
-

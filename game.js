@@ -1,11 +1,9 @@
 let step = true, //step players.
 playerCountBalls = 10,
 compCountBalls = 10,
-playBtn = document.querySelector('.play'),
-  
+playBtn = document.querySelector('.play'), 
 openCollapsible = document.querySelector('.collapsible'),
 openContents = document.querySelector('.contents'),
-
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
 playerImg = document.querySelector('.player-img'),
@@ -31,20 +29,12 @@ messages = {
 let compTotal = document.querySelector('.comp_total'),
   playerTotal = document.querySelector('.player_total');
 
-
-
-
-
 //start game from beginning.
 playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
-
-  openCollapsible.classList.add('hide');
+  openCollapsible.classList.add('hide'); //hidde button and rules bar during play
   openContents.classList.add('hide');
-
-  
-  
   playerCountBalls = 10;
   compCountBalls = 10;
   results.innerHTML = '';
@@ -58,17 +48,11 @@ function play() {
   stepPlayers(step);
 };
 
-
-
-
-
-
 //recompute balls and change of bag image.
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
-    playerBag.setAttribute('src', 'img/empty.png') :
-    playerBag.setAttribute('src', `img/${playerCount}.png`);
-
+  playerBag.setAttribute('src', 'img/empty.png') :
+  playerBag.setAttribute('src', `img/${playerCount}.png`);
   compTotal.innerHTML = compCount;
   playerTotal.innerHTML = playerCount;
 }
@@ -118,8 +102,7 @@ function stepPlayers(step) {
      oddBtn.setAttribute('disabled', 'disabled');
      playerCountBtn.removeAttribute('disabled');
      playerCount.removeAttribute('disabled');
-
-    playerCountBtn.addEventListener('click', function st_cp() {
+     playerCountBtn.addEventListener('click', function st_cp() {
      guessPlayerBalls = +playerCount.value; //geting values from fields.
       //validation of the entered value.
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
@@ -139,7 +122,6 @@ function stepPlayers(step) {
   }
 }
 
-
 //chice of player.
 evenBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 0, step);
@@ -149,7 +131,6 @@ oddBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 1, step);
   writeBets(messages.res_456, guessPlayerBalls, 1);
 });
-
 
 //recording rates in table.
 function writeBets(messBet, countBalls, choices) {
@@ -231,8 +212,20 @@ function checkWinner(valueComp, valuePlayer, check, step) {
 // onkeydown "Enter"
 document.querySelector('.player_count').onkeydown = function(event){
    if(event.keyCode == 13){
-    st_pl()
+    st_pl();
    }
 };
 
+let coll = document.getElementsByClassName('collapsible');
+    for(let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        let contents = this.nextElementSibling;
+        if (contents.style.maxHeight) {
+          contents.style.maxHeight = null;
+        } else {
+          contents.style.maxHeight = contents.scrollHeight + 'px'
+        }
+      })
+    };
 

@@ -10,45 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
-  <style>
-    .collapsible {
-      background-color: #777;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      position: fixed;
-    }
-    .active,
-    .collapsible:hover {
-      background-color: #555;
-      
-     
-    }
-    .contents {
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease-out;
-      background-color: #f1f1f1;
-      position: absolute;
-      margin: 59px 0 0 0;
-       
-    }
-  </style>
 </head>
 <body>
   <button class="collapsible fa"><span><img src="img/balls.png" alt=""></span>Click to see the Game Rules</button>
   <div class="contents">
-  
-    <div class="fa"><h2>How to play even odd game?</h2><h3>The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</h3></div>
+  <div class="fa"><h1>How to play even odd game?</h1><h2>&nbsp;&nbsp;&nbsp;The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</h2></div>
   </div>
-  
- <div class="play_text"></div>
+  <div class="play_text"></div>
   <div class="game">
     <div class="items">
       <div class="item"><img class="comp-img" src="img/001-sad.png" alt=""></div>
@@ -58,17 +26,6 @@
       </div>
     </div>
     <button class="play fa">Play</button>
-    
-    
-
-
-
-
-
-
-
-    
-    
     <div class="items player_items">
       <div class="item"><img class="player-img" src="img/456-sad.png" alt=""></div>
       <div class="item"><img class="player-bag" src="img/empty.png" alt=""></div>
@@ -86,23 +43,6 @@
     </div>  
   </div>
   <div class="game_results"></div>
-  <script src="game.js"></script>
-  <script>
-    
-   let coll = document.getElementsByClassName('collapsible');
-    for(let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener('click', function () {
-        this.classList.toggle('active');
-        let contents = this.nextElementSibling;
-        if (contents.style.maxHeight) {
-          contents.style.maxHeight = null;
-        } else {
-          contents.style.maxHeight = contents.scrollHeight + 'px'
-        }
-      })
-    }
-  
-  
-  </script>
+  <script src="game.js"></script> 
 </body>
 </html>
