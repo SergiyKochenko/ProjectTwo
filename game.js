@@ -7,12 +7,12 @@ openContents = document.querySelector('.contents'),
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
 playerImg = document.querySelector('.player-img'),
-playerCount = document.querySelector('.player-count'),
-playerCountBtn = document.querySelector('.player-count-btn'),
+playerCount = document.querySelector('.player_count'),
+playerCountBtn = document.querySelector('.player_count-btn'),
 evenBtn = document.querySelector('.even'),
 oddBtn = document.querySelector('.odd'),
-playText = document.querySelector('.play-text'),
-results = document.querySelector('.game-results'),
+playText = document.querySelector('.play_text'),
+results = document.querySelector('.game_results'),
 guessCompBalls,
 guessPlayerBalls,
 compEvenOdd,
@@ -25,10 +25,8 @@ messages = {
   'win_001': '<a class="fa"><span style="color: red;">Over game!</span> &nbsp;The winner is Duck!</a>',
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
-
-let compTotal = document.querySelector('.comp-total'),
-  playerTotal = document.querySelector('.player-total');
-
+let compTotal = document.querySelector('.comp_total'),
+  playerTotal = document.querySelector('.player_total');
 //start game from beginning.
 playBtn.addEventListener('click', play);
 function play() {
@@ -47,7 +45,6 @@ function play() {
   createBalls(playerCountBalls, compCountBalls);
   stepPlayers(step);
 };
-
 //recompute balls and change of bag image.
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
@@ -56,7 +53,6 @@ function createBalls(playerCount, compCount) {
   compTotal.innerHTML = compCount;
   playerTotal.innerHTML = playerCount;
 }
-
 //bet by computer.
 function compGuess() {
   //bet by computer randomly from 1 to its number of balls.
@@ -67,7 +63,6 @@ function compGuess() {
   if (compEvenOdd) console.log("Computer's chose odd");
   else console.log("Computer's chose even");
 }
-
 function st_pl() {
       guessPlayerBalls = +playerCount.value; //geting values from fields.
       //validation of the entered value.
@@ -87,7 +82,6 @@ function st_pl() {
        this.removeEventListener('click', st_pl);
      }
     }
-
 //determination of players' move.
 function stepPlayers(step) {
   console.log(step);
@@ -121,7 +115,6 @@ function stepPlayers(step) {
     });
   }
 }
-
 //chice of player.
 evenBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 0, step);
@@ -131,7 +124,6 @@ oddBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 1, step);
   writeBets(messages.res_456, guessPlayerBalls, 1);
 });
-
 //recording rates in table.
 function writeBets(messBet, countBalls, choices) {
   let item = document.createElement('div');
@@ -144,7 +136,6 @@ function writeResultStep(mess, countBalls) {
   item.innerHTML = `${mess} <strong>${countBalls}</strong> <a class="fa">pc.</a>`;
   results.append(item);
 }
-
 //function of disabling the player's buttons in case of the end of the game.
 function disabledButtons() {
   playerCountBtn.setAttribute('disabled', 'disabled');
@@ -152,7 +143,6 @@ function disabledButtons() {
   evenBtn.setAttribute('disabled', 'disabled');
   oddBtn.setAttribute('disabled', 'disabled');
 }
-
 //check winner.
 function checkWinner(valueComp, valuePlayer, check, step) {
 // if player moves and I got the computer's bet, or computer moves and the copputer missed my bet
@@ -179,7 +169,6 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     setTimeout(() => {
       writeResultStep('<a class="fa">Woody win</a>', valuePlayer);
     }, 500);
-    
   }
   else {
     playerCountBalls -= valueComp; // I minus the bet of computer from me
@@ -204,21 +193,16 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     setTimeout(() => {
       writeResultStep('<a class="fa">Duck win</a>', valuePlayer);
     }, 500);
-    
   }
   step = !step; //change move
   stepPlayers(step); //record of new move
 }
 // onkeydown "Enter"
-document.querySelector('.player-count').onkeydown = function(event){
+document.querySelector('.player_count').onkeydown = function(event){
    if(event.keyCode == 13){
     st_pl();
    }
 };
-
-
-
-
 let coll = document.getElementsByClassName('collapsible');
     for(let i = 0; i < coll.length; i++) {
       coll[i].addEventListener('click', function () {
@@ -231,4 +215,3 @@ let coll = document.getElementsByClassName('collapsible');
         }
       })
     };
-
