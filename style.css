@@ -30,7 +30,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
-.player_items {
+.player-items {
   margin-bottom: 0;
   margin-top: 10px;
 }
@@ -48,7 +48,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.player_count {
+.player-count {
   max-width: 150px;
   height: 50px;
   border: none;
@@ -58,7 +58,7 @@ body {
   text-align: center;
   outline: none;
 }
-.player_count-btn {
+.player-count-btn {
   width: 50px;
   height: 50px;
   background: #eb0172;
@@ -114,7 +114,7 @@ input[disabled] {
 .hide {
   display: none;
 }
-.play_text {
+.play-text {
   color: #fff;
   width: 100%;
   font-size: 24px;
@@ -124,7 +124,7 @@ input[disabled] {
   justify-content: center;
   align-items: center;
 }
-.game_results {
+.game-results {
   width: 320px;
   height: 65vh;/*test*/
   border: 2px solid #fff;
@@ -133,17 +133,17 @@ input[disabled] {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.game_results div {
+.game-results div {
   padding: 5px;
   font-size: 14px;
   border-bottom: 1px solid #fff;
 }
-.game_results strong {
+.game-results strong {
   font-size: 16px;
   color: #ff7bba;
 }
-.comp_total,
-.player_total {
+.comp-total,
+.player-total {
   text-align: center;
   width: 100%;
   color: #fff;
@@ -181,14 +181,14 @@ input[disabled] {
   .game {
     max-width: 600px;
   }
-  .player_count {
+  .player-count {
     max-width: 100px;
   }
   .choice {
     width: 85px;
     margin: 15px 5px;
   }
-  .game_results {
+  .game-results {
     width: 250px;
   }
 }
@@ -218,7 +218,7 @@ input[disabled] {
   .game {
     max-width: 400px;
   }
-  .play_text {
+  .play-text {
     font-size: 18px;
     height: 55px;
   }
@@ -235,23 +235,23 @@ input[disabled] {
     margin: 5px;
     width: 65px;
   }
-  .player_count {
+  .player-count {
     max-width: 95px;
     height: 40px;
     font-size: 35px;
   }
-  .player_count-btn {
+  .player-count-btn {
     height: 40px;
   }
 }
 @media (max-width: 600px) {
-  .game_results {
+  .game-results {
     width: 170px;
   }
   .game {
     width: 180px;
   }
-  .play_text {
+  .play-text {
     font-size: 15px;
   }
   .items {

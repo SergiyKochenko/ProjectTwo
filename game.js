@@ -7,12 +7,12 @@ openContents = document.querySelector('.contents'),
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
 playerImg = document.querySelector('.player-img'),
-playerCount = document.querySelector('.player_count'),
-playerCountBtn = document.querySelector('.player_count-btn'),
+playerCount = document.querySelector('.player-count'),
+playerCountBtn = document.querySelector('.player-count-btn'),
 evenBtn = document.querySelector('.even'),
 oddBtn = document.querySelector('.odd'),
-playText = document.querySelector('.play_text'),
-results = document.querySelector('.game_results'),
+playText = document.querySelector('.play-text'),
+results = document.querySelector('.game-results'),
 guessCompBalls,
 guessPlayerBalls,
 compEvenOdd,
@@ -26,8 +26,8 @@ messages = {
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
 
-let compTotal = document.querySelector('.comp_total'),
-  playerTotal = document.querySelector('.player_total');
+let compTotal = document.querySelector('.comp-total'),
+  playerTotal = document.querySelector('.player-total');
 
 //start game from beginning.
 playBtn.addEventListener('click', play);
@@ -210,11 +210,14 @@ function checkWinner(valueComp, valuePlayer, check, step) {
   stepPlayers(step); //record of new move
 }
 // onkeydown "Enter"
-document.querySelector('.player_count').onkeydown = function(event){
+document.querySelector('.player-count').onkeydown = function(event){
    if(event.keyCode == 13){
     st_pl();
    }
 };
+
+
+
 
 let coll = document.getElementsByClassName('collapsible');
     for(let i = 0; i < coll.length; i++) {
