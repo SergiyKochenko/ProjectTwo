@@ -94,7 +94,7 @@ input[disabled] {
   font-size: 25px;
   font-weight: bold;
   border-radius: 4px;
-  color: #1daf9e;
+  color: black;
 }
 .rules-btn {
   background: #fff;
@@ -148,12 +148,12 @@ input[disabled] {
   width: 100%;
   color: #fff;
   font-size: 50px;
-  display: none;/*for developers purpose only,- remove "display: none;" - you will see the both players score on the play yard*/
+  /*display: none;/*for developers purpose only,- remove "display: none;" - you will see the both players score on the play yard*/
 }
 /* collapse bar*/
 .collapsible {
       background-color: #777;
-      color: white;
+      color: black;
       cursor: pointer;
       padding: 18px;
       width: 100%;
@@ -162,6 +162,7 @@ input[disabled] {
       outline: none;
       font-size: 20px;
       position: fixed;
+      z-index: 1;
     }
     .active,
     .collapsible:hover {
@@ -175,6 +176,7 @@ input[disabled] {
       background-color: #f1f1f1;
       position: absolute;
       margin: 59px 0 0 0;
+      position: fixed;
     }
 /*media*/
 @media (max-width: 1100px) {

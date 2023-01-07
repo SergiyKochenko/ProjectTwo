@@ -1,9 +1,9 @@
-let step = true, //step players.
+let step = true, //player turn
 playerCountBalls = 10,
 compCountBalls = 10,
-playBtn = document.querySelector('.play'), 
 openCollapsible = document.querySelector('.collapsible'),
 openContents = document.querySelector('.contents'),
+playBtn = document.querySelector('.play'),
 playerBag = document.querySelector('.player-bag'),
 compImg = document.querySelector('.comp-img'),
 playerImg = document.querySelector('.player-img'),
@@ -25,8 +25,43 @@ messages = {
   'win_001': '<a class="fa"><span style="color: red;">Over game!</span> &nbsp;The winner is Duck!</a>',
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
+
+
+
+
+
+
+// onkeydown "Enter"
+document.querySelector('.player_count').onkeydown = function(event){
+   if(event.keyCode == 13){
+    st_pl();
+   }
+};
+
+
+
+
+
+//topbar
+let coll = document.getElementsByClassName('collapsible');
+    for(let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        let contents = this.nextElementSibling;
+        if (contents.style.maxHeight) {
+          contents.style.maxHeight = null;
+        } else {
+          contents.style.maxHeight = contents.scrollHeight + 'px'
+        }
+      })
+    };
+
+
+
+
 let compTotal = document.querySelector('.comp_total'),
-  playerTotal = document.querySelector('.player_total');
+    playerTotal = document.querySelector('.player_total');
+
 //start game from beginning.
 playBtn.addEventListener('click', play);
 function play() {
@@ -45,6 +80,7 @@ function play() {
   createBalls(playerCountBalls, compCountBalls);
   stepPlayers(step);
 };
+
 //recompute balls and change of bag image.
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
@@ -53,6 +89,7 @@ function createBalls(playerCount, compCount) {
   compTotal.innerHTML = compCount;
   playerTotal.innerHTML = playerCount;
 }
+
 //bet by computer.
 function compGuess() {
   //bet by computer randomly from 1 to its number of balls.
@@ -82,6 +119,7 @@ function st_pl() {
        this.removeEventListener('click', st_pl);
      }
     }
+
 //determination of players' move.
 function stepPlayers(step) {
   console.log(step);
@@ -115,6 +153,7 @@ function stepPlayers(step) {
     });
   }
 }
+
 //chice of player.
 evenBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 0, step);
@@ -124,18 +163,21 @@ oddBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 1, step);
   writeBets(messages.res_456, guessPlayerBalls, 1);
 });
+
 //recording rates in table.
 function writeBets(messBet, countBalls, choices) {
   let item = document.createElement('div');
   item.innerHTML = `${messBet} <strong>${countBalls}</strong> <a class="fa">and chose</a> ${choices ? '<a class="fa">odd</a>' : '<a class="fa">even</a>'}`;
   results.append(item);
 }
+
 //records of moves results.
 function writeResultStep(mess, countBalls) {
   let item = document.createElement('div');
   item.innerHTML = `${mess} <strong>${countBalls}</strong> <a class="fa">pc.</a>`;
   results.append(item);
 }
+
 //function of disabling the player's buttons in case of the end of the game.
 function disabledButtons() {
   playerCountBtn.setAttribute('disabled', 'disabled');
@@ -143,6 +185,7 @@ function disabledButtons() {
   evenBtn.setAttribute('disabled', 'disabled');
   oddBtn.setAttribute('disabled', 'disabled');
 }
+
 //check winner.
 function checkWinner(valueComp, valuePlayer, check, step) {
 // if player moves and I got the computer's bet, or computer moves and the copputer missed my bet
@@ -152,6 +195,7 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     createBalls(playerCountBalls, compCountBalls);
     playerImg.setAttribute('src', 'img/456-happy.png');
     compImg.setAttribute('src', 'img/001-sad.png');
+    
     //game end conditions
     if(playerCountBalls >= 20) {
       playText.innerHTML = messages.win_456;
@@ -165,6 +209,7 @@ function checkWinner(valueComp, valuePlayer, check, step) {
       disabledButtons();
       return;
     }
+    
     //message to the table about the results
     setTimeout(() => {
       writeResultStep('<a class="fa">Woody win</a>', valuePlayer);
@@ -176,6 +221,7 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     createBalls(playerCountBalls, compCountBalls);
     playerImg.setAttribute('src', 'img/456-sad.png');
     compImg.setAttribute('src', 'img/001-happy.png');
+    
     //game end conditions
     if(playerCountBalls >= 20) {
       playText.innerHTML = messages.win_456;
@@ -189,29 +235,13 @@ function checkWinner(valueComp, valuePlayer, check, step) {
       disabledButtons();
       return;
     }
+    
     //message to the table about the results
     setTimeout(() => {
       writeResultStep('<a class="fa">Duck win</a>', valuePlayer);
     }, 500);
   }
+  
   step = !step; //change move
   stepPlayers(step); //record of new move
 }
-// onkeydown "Enter"
-document.querySelector('.player_count').onkeydown = function(event){
-   if(event.keyCode == 13){
-    st_pl();
-   }
-};
-let coll = document.getElementsByClassName('collapsible');
-    for(let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener('click', function () {
-        this.classList.toggle('active');
-        let contents = this.nextElementSibling;
-        if (contents.style.maxHeight) {
-          contents.style.maxHeight = null;
-        } else {
-          contents.style.maxHeight = contents.scrollHeight + 'px'
-        }
-      })
-    };
