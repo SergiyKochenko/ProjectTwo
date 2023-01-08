@@ -17,12 +17,12 @@ guessCompBalls,
 guessPlayerBalls,
 compEvenOdd,
 messages = {
-  'wrong_bet': '<a class="fa" style="color: red; font-size: 1.5em;">Wrong bet</a>',
+  'wrong_bet': '<a class="fa" style="color: red; font-size: 1.5em; text-shadow: red 1px 0 10px;">Wrong bet</a>',
   'step_456': '<a class="fa">Guess Woody! <br>Place your bet and choose Odd/Even</a>',
-  'win_456': '<a class="fa" style="font-size: 1.5em;"><span style="color: red;">Over game!</span> &nbsp;The winner is Woody!</a>',
+  'win_456': '<a class="fa" style="font-size: 1.5em; text-shadow: #fff 1px 0 10px;"><span style="color: red; text-shadow: red 1px 0 10px;">Over game!</span> &nbsp;The winner is Woody!</a>',
   'res_456': '<a class="fa">Woody made his bet</a>',
   'step_001': '<a class="fa">Guessing Duck! <br>Place your bet</a>',
-  'win_001': '<a class="fa" style="font-size: 1.5em;"><span style="color: red;">Over game!</span> &nbsp;The winner is Duck!</a>',
+  'win_001': '<a class="fa" style="font-size: 1.5em; text-shadow: #fff 1px 0 10px;"><span style="color: red; text-shadow: red 1px 0 10px;">Over game!</span> &nbsp;The winner is Duck!</a>',
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
 
