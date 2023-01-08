@@ -29,3 +29,10 @@
 <li><a href="https://validator.w3.org/" rel="nofollow">CSS Validator</a></li>
 <li><a href="https://jshint.com/" rel="nofollow">JS Hint</a></li>
 </ul>
+<h2>Testing</h2>
+<h3>Validator Testing</h3>
+<ul dir="auto">
+<li><a href="https://validator.w3.org/" rel="nofollow">HTML Validator</a> was run at several points during the project and small syntax errors were identified and fixed. At the final stage no errors or warnings were found.</li>
+</ul>
+
+<img src="img/html-validator.png" alt="alt-text" style="max-width: 100%;">
