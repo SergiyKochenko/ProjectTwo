@@ -73,7 +73,12 @@
 <h3>Lighthouse tests:</h3>
 <img src="img/lighthouse.png" alt="alt-text" style="max-width: 100%;">
 <h2>Manual Testing</h2>
-<p dir="auto">&nbsp;&nbsp;&nbsp;The game was tested by users of various ages. Feedback was overall positive from users. The following constructive feedback was used to make improvements.</p>
+<p dir="auto">&nbsp;&nbsp;&nbsp;The game was tested by users of various ages. Feedback was overall positive from users. The following constructive feedback was used to make improvements.
+  
+Mobiles 320x480px scaled down to scale(0.219)  is not supported.
+
+
+</p>
 <h2>Performing tests on various devices</h2>
 <p dir="auto">The website was tested on the following devices:</p>
 <ul dir="auto">
