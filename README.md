@@ -1,28 +1,45 @@
-
 <p dir="auto"><h1>Portfolio Project 2: Interactive Front-End Development</h1></p>
+<img src="img/amiresponsive.png" alt="alt-text" style="max-width: 100%;">
+<p dir="auto"><h2>The game was based on the serial  "Game of squid" and the game's rules.</h2></p>
 <h2>How to play even odd game?</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</p>
 <h2>Demo</h2>
 <a href="https://sergiykochenko.github.io/ProjectTwo/" rel="nofollow">View the Live Website Here</a>
-
 <h2>Project Goals</h2>
-<p dir="auto">Guessing numbers is a classic Hangman game!</p>
+<p dir="auto">Guessing numbers is a classic game!</p>
 <h3>User Goals</h3>
 <ul dir="auto">
-<li>Play a fun and engaging word guessing game</li>
-<li>Test your general knowledge by guessing different phrases</li>
+<li>Play a fun and engaging numbers guessing game</li>
+<li>Test your general knowledge by guessing different numbers</li>
 </ul>
-
-
-
-
-
 <h2>Design</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age; from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults.</p>
+<h2>User Experience</h2>
+<h3>Target Audience</h3>
+<ul dir="auto">
+<li>casual gamers.</li>
+<li>people who like word games.</li>
+<li>people looking for a quick and easy yet engaging game.</li>
+</ul>
+<h3>User Requirements and Expectations.</h3>
+<ul dir="auto">
+<li>A simple and intuitive navigation system.</li>
+<li>Quick, easy, and fun to play.</li>
+<li>Links and functions that work as expected..</li>
+<li>Good presentation and a visually appealing design regardless of screen size</li>
+<li>Accessibility</li>
+</ul>
+<h2 dir="auto">Features</h2>
+<p dir="auto">The site consists of one page with play button.</p>
+<h3 dir="auto">Header</h3>
+<ul dir="auto">
+<li>Featured on top of page with hidden option on JavaScript once click on play button.</li>
+<li>Consists of the game logo on the top of side bar and rules instruction in it.</li>
+</ul>
 <h2>Languages Used</h2>
 <ul dir="auto">
 <li>HTML (Hypertext Markup Language) was used to design the basic website.</li>
-<li>CSS (Cascading Style Sheets) to style the website and make it look more appealing to the user.</li>
+<li>CSS (Cascading Style Sheets) to style the website and make it look more. appealing to the user.</li>
 <li>JavaScript was used to provide interactivity to the application.</li>
 </ul>
 <h2>Technologies Used</h2>
@@ -33,8 +50,6 @@
 <p dir="auto"><a href="https://replit.com/" rel="nofollow">Replit </a> was used for Coding</p>
 <p dir="auto"><a href="https://helpx.adobe.com/photoshop/using/whats-new.html" rel="nofollow">Adobe photoshop 2022 </a> was used for Icons creation</p>
 <p dir="auto"><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education</p>
-
-
 <ul dir="auto">
 <li><a href="https://validator.w3.org/" rel="nofollow">HTML Validator</a></li>
 <li><a href="https://validator.w3.org/" rel="nofollow">CSS Validator</a></li>
@@ -75,9 +90,7 @@
 <h2>Manual Testing</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The game was tested by users of various ages. Feedback was overall positive from users. The following constructive feedback was used to make improvements.
   
-Mobiles 320x480px scaled down to scale(0.219)  is not supported.
-
-
+Mobiles 320x480px scaled down to scale(0.219)  are not supported.
 </p>
 <h2>Performing tests on various devices</h2>
 <p dir="auto">The website was tested on the following devices:</p>
@@ -96,3 +109,35 @@ Mobiles 320x480px scaled down to scale(0.219)  is not supported.
 </ul>
 <h2>Credits</h2>
 <p dir="auto">All images, save the background image were created by the developer.</p>
+
+<h3>Bugs</h3>
+<p dir="auto">The following bug was found:</p>
+<p dir="auto">Mobiles 320x480px scaled down to scale(0.219) are not supported.</p>
+<h3>Deployment</h3>
+<p dir="auto">The website was deployed using Replit and linked to Gitpot the  Gitpot to GitHub with all necessary commita and pusshes by following these steps on GitHub Pages:</p>
+<ol dir="auto">
+<li>In the GitHub repository navigate to the Settings tab</li>
+<li>On the left-hand menu select Pages</li>
+<li>For the source select Branch: main</li>
+<li>After the webpage refreshes automatically you will ses a ribbon on the top saying: "Your site is published at <a href="https://sergiykochenko.github.io/ProjectTwo/" rel="nofollow">https://sergiykochenko.github.io/ProjectTwo/</a></li>
+</ol>
+<p dir="auto">You can fork the repository by following these steps:</p>
+<ol dir="auto">
+<li>Go to the GitHub repository</li>
+<li>Click on Fork button in the upper right hand corner</li>
+</ol>
+<p dir="auto">You can clone the repository by following these steps:</p>
+<ol dir="auto">
+<li>Go to the GitHub repository</li>
+<li>Locate the Code button above the list of files and click it</li>
+<li>Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard</li>
+<li>Open Git Bash</li>
+<li>Change the current working directory to the one where you want the cloned directory</li>
+<li>Type git clone and paste the URL from the clipboard ($ git clone <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY">https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</a>)
+<li>Press Enter to create your local clone.</li>
+</ol>
+<h2>Acknowledgments</h2>
+<ul dir="auto">
+<li>My mentor Jubril Akolade for his feedback, advice, guidance and support.</li>
+<li>My family for supporting me, advice with design , help with testing, and for giving me some kids free time to work on my project.</li>
+</ul>
