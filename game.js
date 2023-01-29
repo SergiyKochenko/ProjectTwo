@@ -26,7 +26,7 @@ messages = {
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
 
-//topbar
+//top side bar menu
 let coll = document.getElementsByClassName('collapsible');
     for(let i = 0; i < coll.length; i++) {
       coll[i].addEventListener('click', function () {
@@ -47,8 +47,8 @@ let compTotal = document.querySelector('.comp_total'),
 playBtn.addEventListener('click', play);
 function play() {
   playBtn.classList.add('hide');
-  openCollapsible.classList.add('hide'); //hidde button and rules bar during play
-  openContents.classList.add('hide');
+  openCollapsible.classList.add('hide'); //function hide collapsible bar on click button "Play"
+  openContents.classList.add('hide'); //function hidde rules content on click button "Play"
   playerCountBalls = 10;
   compCountBalls = 10;
   results.innerHTML = '';
@@ -62,7 +62,7 @@ function play() {
   stepPlayers(step);
 };
 
-//recompute balls and change of bag image.
+//recalculation of balls and changing the picture of the bag
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
   playerBag.setAttribute('src', 'img/empty.png') :
@@ -71,9 +71,9 @@ function createBalls(playerCount, compCount) {
   playerTotal.innerHTML = playerCount;
 }
 
-//bet by computer.
+//computer's bet and choice
 function compGuess() {
-  //bet by computer randomly from 1 to its number of balls.
+  //computer's bet rendomly from 1 to its owned number of balls
   guessCompBalls = Math.round(Math.random() * (compCountBalls - 1) + 1);
   //rendom choice of even or odd.
   compEvenOdd = Math.round(Math.random());
@@ -81,7 +81,14 @@ function compGuess() {
   if (compEvenOdd) console.log("Computer's chose odd");
   else console.log("Computer's chose even");
 }
-function st_pl() {
+
+//determination of players' move.
+function stepPlayers(step) {
+  console.log(step);
+  compGuess(); //guesses the computer.
+  if (step) { //if the player moves.
+    playText.innerHTML = messages.step_456;
+    playerCountBtn.addEventListener('click', function st_pl() {
       guessPlayerBalls = +playerCount.value; //geting values from fields.
       //validation of the entered value.
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
@@ -99,15 +106,7 @@ function st_pl() {
        playerCount.value = '';
        this.removeEventListener('click', st_pl);
      }
-    }
-
-//determination of players' move.
-function stepPlayers(step) {
-  console.log(step);
-  compGuess(); //guesses the computer.
-  if (step) { //if the player moves.
-    playText.innerHTML = messages.step_456;
-    playerCountBtn.addEventListener('click',  st_pl);
+    });
   }
   else { //if the computer moves.
      playText.innerHTML = messages.step_001;
