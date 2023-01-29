@@ -198,6 +198,9 @@ footer{
 .socials li {
   margin: 0 20px;
 }
+.socials li a {
+  color: #fff;
+}
 .socials a:hover {
   color: aqua;
 }
