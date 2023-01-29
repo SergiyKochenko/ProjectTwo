@@ -177,6 +177,30 @@ input[disabled] {
       text-shadow: lightblue 1px 0 10px;
       border-radius: 0 0 5px 5px;
     }
+/*Footer*/
+footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 0;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+.socials li {
+  margin: 0 20px;
+}
+.socials a:hover {
+  color: aqua;
+}
 /*media*/
 @media (max-width: 1100px) {
   .game {
@@ -262,9 +286,5 @@ input[disabled] {
   .items .item {
     width: 100%;
   }
-
 }
-
-
-
 
