@@ -35,10 +35,10 @@ let coll = document.getElementsByClassName('collapsible');
         if (contents.style.maxHeight) {
           contents.style.maxHeight = null;
         } else {
-          contents.style.maxHeight = contents.scrollHeight + 'px'
+          contents.style.maxHeight = contents.scrollHeight + 'px';
         }
-      })
-    };
+      });
+    }
 
 let compTotal = document.querySelector('.comp_total'),
     playerTotal = document.querySelector('.player_total');
@@ -60,7 +60,7 @@ function play() {
   oddBtn.setAttribute('disabled', 'disabled');
   createBalls(playerCountBalls, compCountBalls);
   stepPlayers(step);
-};
+}
 
 //recalculation of balls and changing the picture of the bag
 function createBalls(playerCount, compCount) {
