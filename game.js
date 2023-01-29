@@ -52,8 +52,8 @@ function play() {
   playerCountBalls = 10;
   compCountBalls = 10;
   results.innerHTML = '';
-  compImg.setAttribute('src', 'img/001-sad.png');
-  playerImg.setAttribute('src', 'img/456-sad.png');
+  compImg.setAttribute('src', 'assets/img/001-sad.png');
+  playerImg.setAttribute('src', 'assets/img/456-sad.png');
   playerCountBtn.removeAttribute('disabled');
   playerCount.removeAttribute('disabled');
   evenBtn.setAttribute('disabled', 'disabled');
@@ -65,8 +65,8 @@ function play() {
 //recalculation of balls and changing the picture of the bag
 function createBalls(playerCount, compCount) {
   playerCount >= 20 || playerCount <= 0 ?
-  playerBag.setAttribute('src', 'img/empty.png') :
-  playerBag.setAttribute('src', `img/${playerCount}.png`);
+  playerBag.setAttribute('src', 'assets/img/empty.png') :
+  playerBag.setAttribute('src', `assets/img/${playerCount}.png`);
   compTotal.innerHTML = compCount;
   playerTotal.innerHTML = playerCount;
 }
@@ -78,8 +78,8 @@ function compGuess() {
   //rendom choice of even or odd.
   compEvenOdd = Math.round(Math.random());
   console.log('computer bet -' + guessCompBalls);
-  if (compEvenOdd) console.log("Computer's chose odd");
-  else console.log("Computer's chose even");
+  if (compEvenOdd) console.log("Computer's chose odd"); //to test see developers tool console
+  else console.log("Computer's chose even"); //to test developers tool console
 }
 
 //determination of the players' move
@@ -173,8 +173,8 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     playerCountBalls += valuePlayer; //I add my bet to my balls
     compCountBalls -= valuePlayer; //I take my bet from the computer
     createBalls(playerCountBalls, compCountBalls);
-    playerImg.setAttribute('src', 'img/456-happy.png');
-    compImg.setAttribute('src', 'img/001-sad.png');
+    playerImg.setAttribute('src', 'assets/img/456-happy.png');
+    compImg.setAttribute('src', 'assets/img/001-sad.png');
     
     //game end condition
     if(playerCountBalls >= 20) {
@@ -199,8 +199,8 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     playerCountBalls -= valueComp; //I give away the bet of the computer to computer
     compCountBalls += valueComp; //I add to the computer its bet
     createBalls(playerCountBalls, compCountBalls);
-    playerImg.setAttribute('src', 'img/456-sad.png');
-    compImg.setAttribute('src', 'img/001-happy.png');
+    playerImg.setAttribute('src', 'assets/img/456-sad.png');
+    compImg.setAttribute('src', 'assets/img/001-happy.png');
     
     //game end condition
     if(playerCountBalls >= 20) {
