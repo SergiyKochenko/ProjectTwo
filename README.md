@@ -1,5 +1,5 @@
 <p dir="auto"><h1>Portfolio Project 2: Interactive Front-End Development</h1></p>
-<img src="img/amiresponsive.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/amiresponsive.png" alt="alt-text" style="max-width: 100%;">
 <p dir="auto"><h2>The game was based on the serial  "Game of squid" and the game's rules.</h2></p>
 <h2>How to play even odd game?</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The player who owns the right to move must guess the even or odd number of balls in the second players hand. If he guesses correctly, he takes as many balls from the second player as he himself holds. And vice versa - if he does not guess, he gives as many balls as the second has in his hand.</p>
@@ -63,9 +63,9 @@
   &nbsp;&nbsp;&nbsp;Warning: The inputmode attribute is not supported in all browsers. Please be sure to test, and consider using a polyfill, - Maintainer of the W3C HTML checker (validator) here. That message is just a warning message, not an error. And the reason we have the HTML checker emit that warning is, input type=date isn’t supported in desktop Safari or Internet Explorer, nor in versions of Firefox before Firefox 57, nor on Android before Android 4.4.
 </li>
 </ul>
-<img src="img/html-validator.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/html-validator.png" alt="alt-text" style="max-width: 100%;">
 <li><a href="https://jigsaw.w3.org/" rel="nofollow">CSS Validator</a> was run several times during the project and picked up small syntax errors which were corrected. At the time of submission the css code successfully passed the validator with no errors.</li>
-<img src="img/css-validator.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/css-validator.png" alt="alt-text" style="max-width: 100%;">
 <li>
 <p dir="auto"><a href="https://jshint.com/" rel="nofollow">JS Hint</a> was used to check the two javascript files. No errors were found and the following metrics were returned:</p>
 <ul dir="auto">
@@ -75,7 +75,7 @@
 <li>The most complex funtion has a cyclomatic complexity value of 9 while the median is 1.5.</li>
 </ul>
 </li>
-<img src="img/jshint.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/jshint.png" alt="alt-text" style="max-width: 100%;">
 <ul dir="auto">
 <li>Chrome Developer Tools was used in responsiveness design and extensively in debugging javascript functions.</li>
 <li>Lighthouse in Chrome Developer Tools was used to check performance and picked up some early contrast errors in colour choice so colours were adjusted accordingly.
@@ -86,7 +86,7 @@
 </li>
 </ul>
 <h3>Lighthouse tests:</h3>
-<img src="img/lighthouse.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/lighthouse.png" alt="alt-text" style="max-width: 100%;">
 <h2>Manual Testing</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The game was tested by users of various ages. Feedback was overall positive from users. The following constructive feedback was used to make improvements.
   
