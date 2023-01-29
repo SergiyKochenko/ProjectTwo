@@ -82,15 +82,15 @@ function compGuess() {
   else console.log("Computer's chose even");
 }
 
-//determination of players' move.
+//determination of the players' move
 function stepPlayers(step) {
   console.log(step);
-  compGuess(); //guesses the computer.
-  if (step) { //if the player moves.
+  compGuess(); //guesses the computer
+  if (step) { //if the player's move
     playText.innerHTML = messages.step_456;
     playerCountBtn.addEventListener('click', function st_pl() {
-      guessPlayerBalls = +playerCount.value; //geting values from fields.
-      //validation of the entered value.
+      guessPlayerBalls = +playerCount.value; //get values from field
+      //validation of the entered value
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
        playText.innerHTML = messages.wrong_bet;
        setTimeout(() => {
@@ -98,7 +98,7 @@ function stepPlayers(step) {
          playerCount.value = '';
        }, 2000);
      } 
-     else { //if passed validation.
+     else { //if passed validation
        playerCountBtn.setAttribute('disabled', 'disabled');
        playerCount.setAttribute('disabled', 'disabled');
        evenBtn.removeAttribute('disabled');
@@ -108,15 +108,15 @@ function stepPlayers(step) {
      }
     });
   }
-  else { //if the computer moves.
+  else { //if the computer's move
      playText.innerHTML = messages.step_001;
      evenBtn.setAttribute('disabled', 'disabled');
      oddBtn.setAttribute('disabled', 'disabled');
      playerCountBtn.removeAttribute('disabled');
      playerCount.removeAttribute('disabled');
      playerCountBtn.addEventListener('click', function st_cp() {
-     guessPlayerBalls = +playerCount.value; //geting values from fields.
-      //validation of the entered value.
+     guessPlayerBalls = +playerCount.value; //geting values from field
+      //validation of the entered value
      if (guessPlayerBalls == 0 || guessPlayerBalls > playerCountBalls || isNaN(guessPlayerBalls)){
        playText.innerHTML = messages.wrong_bet;
        setTimeout(() => {
@@ -124,7 +124,7 @@ function stepPlayers(step) {
          playerCount.value = '';
        }, 2000);
      } 
-      else { //if passed validation.
+      else { //if passed validation
        writeBets(messages.res_001, guessCompBalls, compEvenOdd);
        checkWinner(guessCompBalls, guessPlayerBalls, compEvenOdd, step);
        playerCount.value = '';
@@ -134,7 +134,7 @@ function stepPlayers(step) {
   }
 }
 
-//chice of player.
+//player chooses
 evenBtn.addEventListener('click', function () {
   checkWinner(guessCompBalls, guessPlayerBalls, 0, step);
   writeBets(messages.res_456, guessPlayerBalls, 0);
@@ -144,21 +144,21 @@ oddBtn.addEventListener('click', function () {
   writeBets(messages.res_456, guessPlayerBalls, 1);
 });
 
-//recording rates in table.
+//function recording rates in the table
 function writeBets(messBet, countBalls, choices) {
   let item = document.createElement('div');
   item.innerHTML = `${messBet} <strong>${countBalls}</strong> <a class="fa">and chose</a> ${choices ? '<a class="fa">odd</a>' : '<a class="fa">even</a>'}`;
   results.append(item);
 }
 
-//records of moves results.
+//function recording the result of moves
 function writeResultStep(mess, countBalls) {
   let item = document.createElement('div');
   item.innerHTML = `${mess} <strong>${countBalls}</strong> <a class="fa">pc.</a>`;
   results.append(item);
 }
 
-//function of disabling the player's buttons in case of the end of the game.
+//function of disabling the player's buttons in case of the end of the game
 function disabledButtons() {
   playerCountBtn.setAttribute('disabled', 'disabled');
   playerCount.setAttribute('disabled', 'disabled');
@@ -166,17 +166,17 @@ function disabledButtons() {
   oddBtn.setAttribute('disabled', 'disabled');
 }
 
-//check winner.
+//function winner checker
 function checkWinner(valueComp, valuePlayer, check, step) {
-// if player moves and I got the computer's bet, or computer moves and the copputer missed my bet
+//if the player moves and he guessed the computer's bet, or guessed the computer's move and the computer did not guess my bet
   if ((valueComp % 2 == check && step) || (valuePlayer % 2 != check && !step)) {
-    playerCountBalls += valuePlayer; // to my balls I add my bet
-    compCountBalls -= valuePlayer; // I take my bet from the computer
+    playerCountBalls += valuePlayer; //I add my bet to my balls
+    compCountBalls -= valuePlayer; //I take my bet from the computer
     createBalls(playerCountBalls, compCountBalls);
     playerImg.setAttribute('src', 'img/456-happy.png');
     compImg.setAttribute('src', 'img/001-sad.png');
     
-    //game end conditions
+    //game end condition
     if(playerCountBalls >= 20) {
       playText.innerHTML = messages.win_456;
       playBtn.classList.remove('hide');
@@ -196,13 +196,13 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     }, 500);
   }
   else {
-    playerCountBalls -= valueComp; // I minus the bet of computer from me
-    compCountBalls += valueComp; // I add to the compurer its bet
+    playerCountBalls -= valueComp; //I give away the bet of the computer to computer
+    compCountBalls += valueComp; //I add to the computer its bet
     createBalls(playerCountBalls, compCountBalls);
     playerImg.setAttribute('src', 'img/456-sad.png');
     compImg.setAttribute('src', 'img/001-happy.png');
     
-    //game end conditions
+    //game end condition
     if(playerCountBalls >= 20) {
       playText.innerHTML = messages.win_456;
       playBtn.classList.remove('hide');
@@ -222,6 +222,6 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     }, 500);
   }
   
-  step = !step; //change move
-  stepPlayers(step); //record of new move
+  step = !step; //change of players
+  stepPlayers(step); //start a new move
 }
