@@ -26,22 +26,6 @@ messages = {
   'res_001': '<a class="fa">Duck made his bet</a>'
 };
 
-
-
-
-
-
-// onkeydown "Enter"
-document.querySelector('.player_count').onkeydown = function(event){
-   if(event.keyCode == 13){
-    st_pl();
-   }
-};
-
-
-
-
-
 //topbar
 let coll = document.getElementsByClassName('collapsible');
     for(let i = 0; i < coll.length; i++) {
@@ -55,9 +39,6 @@ let coll = document.getElementsByClassName('collapsible');
         }
       })
     };
-
-
-
 
 let compTotal = document.querySelector('.comp_total'),
     playerTotal = document.querySelector('.player_total');
