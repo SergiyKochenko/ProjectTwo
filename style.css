@@ -200,6 +200,7 @@ footer{
 }
 .socials li a {
   color: #fff;
+  transition: color .4s ease;
 }
 .socials a:hover {
   color: aqua;
