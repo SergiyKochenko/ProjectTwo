@@ -143,7 +143,7 @@ input[disabled] {
   width: 100%;
   color: #fff;
   font-size: 50px;
-  /*display: none; /*to test use: for developers purpose only,- remove "display: none;" - you will see the both players score on the play yard*/
+  display: none; /*to test use: for developers purpose only,- remove "display: none;" - you will see the both players score on the play yard*/
 }
 /* collapse bar*/
 .collapsible {

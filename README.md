@@ -185,5 +185,5 @@ CSS option - remove the display: none;<br>
 <h2>Acknowledgments</h2>
 <ul dir="auto">
 <li>Special thanks to my class mates and class teacher Irene Neville, advice guidance and support.</li>
-<li>My family for supporting me, advice with design , help with testing, and for giving me some kids free time to work on my project.</li>
+<li>My family for supporting me, advice with design , help with testing, and for giving me some kids free time to work on my project. My 8 years old daughter love thi game.</li>
 </ul>
