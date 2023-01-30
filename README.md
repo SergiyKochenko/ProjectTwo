@@ -6,19 +6,26 @@
 <h2>Demo</h2>
 <a href="https://sergiykochenko.github.io/ProjectTwo/" rel="nofollow">View the Live Website Here</a>
 <h2>Project Goals</h2>
-<p dir="auto">Guessing numbers is a classic game!</p>
+<p dir="auto"><p>&nbsp;&nbsp;&nbsp;Quite interesting and, at the same time, a simple logic game. Try playing it with the computer.</p>
+
+<p>Rules: &nbsp;&nbsp;&nbsp;Each player has 10 stones/balls/small items. Both players take several stones in their hand, squeeze it, and then stretch it forward. The player who owns the right to move must guess the even or odd number of stones in the second player's hand. If he guesses correctly, he takes as many stones from the second player as he himself holds. And vice versa - if he doesn’t guess, he gives as many stones as the second one has in his hand. The winner is the one who ends up with 20 stones.</p></p>
 <h3>User Goals</h3>
 <ul dir="auto">
 <li>Play a fun and engaging numbers guessing game</li>
 <li>Test your general knowledge by guessing different numbers</li>
 </ul>
-<h2>Design</h2>
+<h2 dir="auto">Surface/Design</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age; from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults.</p>
+
+<img src="assets/readme/design.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/surface.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/field_number.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/odd_even_button.png" alt="alt-text" style="max-width: 100%;">
 <h2>User Experience</h2>
 <h3>Target Audience</h3>
 <ul dir="auto">
 <li>casual gamers.</li>
-<li>people who like word games.</li>
+<li>people who like play with numbers the game is good for playing in numbers.</li>
 <li>people looking for a quick and easy yet engaging game.</li>
 </ul>
 <h3>User Requirements and Expectations.</h3>
@@ -30,12 +37,31 @@
 <li>Accessibility</li>
 </ul>
 <h2 dir="auto">Features</h2>
-<p dir="auto">The site consists of one page with play button.</p>
+<p dir="auto">The site consists of one page with a menu header in it you can read the rules of the game, with a play button, and for convenience there is a footer with links to social networks..</p>
 <h3 dir="auto">Header</h3>
 <ul dir="auto">
 <li>Featured on top of page with hidden option on JavaScript once click on play button.</li>
 <li>Consists of the game logo on the top of side bar and rules instruction in it.</li>
 </ul>
+<img src="assets/readme/slider.png" alt="alt-text" style="max-width: 100%;">
+<h3 dir="auto">Play button</h3>
+<ul dir="auto">
+<li>When you click on the play button, the game is activated and the top menu disappears due to the JavaScript function.</li>
+</ul>
+<img src="assets/readme/play_button.png" alt="alt-text" style="max-width: 100%;">
+<h3 dir="auto">Footer</h3>
+<ul dir="auto">
+<li>The footer consists of JavaScript social media icons with links.</li>
+  <ol dir="auto">
+    <li>Facebook JavaScript icon.</li>
+    <li>Twitter JavaScript icon.</li>
+    <li>Instagram JavaScript icon.</li>
+    <li>YouTube JavaScript icon.</li>
+    <li>LinkedIn JavaScript icon.</li>
+</ol>
+</ul>
+<img src="assets/readme/footer.png" alt="alt-text" style="max-width: 100%;">
+
 <h2>Languages Used</h2>
 <ul dir="auto">
 <li>HTML (Hypertext Markup Language) was used to design the basic website.</li>
@@ -66,18 +92,17 @@
 <img src="assets/readme/html-validator.png" alt="alt-text" style="max-width: 100%;">
 <li><a href="https://jigsaw.w3.org/" rel="nofollow">CSS Validator</a> was run several times during the project and picked up small syntax errors which were corrected. At the time of submission the css code successfully passed the validator with no errors.</li>
 <img src="assets/readme/css-validator.png" alt="alt-text" style="max-width: 100%;">
-<li>
 <p dir="auto"><a href="https://jshint.com/" rel="nofollow">JS Hint</a> was used to check the two javascript files. No errors were found and the following metrics were returned:</p>
 <ul dir="auto">
-<li>There are 18 functions in this file</li>
-<li>Function with the largest signature takes 4 argument</li>
-<li>Largest function has 35 statements in it, while the median is 3</li>
-<li>The most complex funtion has a cyclomatic complexity value of 9 while the median is 1.5.</li>
+  <li>There are 17 functions in this file</li>
+  <li>Function with the largest signature takes 4 arguments, while the median is 0.</li>
+  <li>Largest function has 35 statements in it, while the median is 3</li>
+  <li>The most complex funtion has a cyclomatic complexity value of 9 while the median is 1.</li>
+  <li>15 warnings see below img.</li>
 </ul>
-</li>
 <img src="assets/readme/jshint.png" alt="alt-text" style="max-width: 100%;">
 <ul dir="auto">
-<li>Chrome Developer Tools was used in responsiveness design and extensively in debugging javascript functions.</li>
+<li> <p dir="auto"><a href="https://www.google.com/intl/eu/chrome/" rel="nofollow">Google Chrome </a></p>Chrome Developer Tools was used in responsiveness design and extensively in debugging javascript functions.</li>
 <li>Lighthouse in Chrome Developer Tools was used to check performance and picked up some early contrast errors in colour choice so colours were adjusted accordingly.
 <ul dir="auto">
 <li>Lighthouse indicated that the background image was large for the site so this was resized without impacting quality and fixed this warning.</li>
