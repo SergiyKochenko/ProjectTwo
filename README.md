@@ -111,11 +111,32 @@
 </li>
 </ul>
 <h3>Lighthouse tests:</h3>
-<img src="assets/readme/lighthouse.png" alt="alt-text" style="max-width: 100%;">
+<p>Decktop test</p>
+<img src="assets/readme/lighthous_test_desktop.png" alt="alt-text" style="max-width: 100%;">
+<p>Mobile test</p>
+<img src="assets/readme/lighthous_test_mobile.png" alt="alt-text" style="max-width: 100%;">
 <h2>Manual Testing</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The game was tested by users of various ages. Feedback was overall positive from users. The following constructive feedback was used to make improvements.
   
 Mobiles 320x480px scaled down to scale(0.219)  are not supported.
+
+<p>Test in console Developer tools web-browser:<br>
+console.log("Computer's chose odd"); <br>
+console.log("Computer's chose even");<br>
+console.log('computer bet -' + guessCompBalls);</p>
+<img src="assets/readme/code_console_log_test.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/console_log_devtools_test.png" alt="alt-text" style="max-width: 100%;">
+</p>
+
+
+<p>Testing score of balls on players:<br>
+CSS option - remove the display: none;<br>
+
+<img src="assets/readme/display_none_option.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/normal_mode.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/removed_display_none.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/test_mode.png" alt="alt-text" style="max-width: 100%;">
+
 </p>
 <h2>Performing tests on various devices</h2>
 <p dir="auto">The website was tested on the following devices:</p>
@@ -163,6 +184,6 @@ Mobiles 320x480px scaled down to scale(0.219)  are not supported.
 </ol>
 <h2>Acknowledgments</h2>
 <ul dir="auto">
-<li>My mentor Jubril Akolade for his feedback, advice, guidance and support.</li>
+<li>Special thanks to my class mates and class teacher Irene Neville, advice guidance and support.</li>
 <li>My family for supporting me, advice with design , help with testing, and for giving me some kids free time to work on my project.</li>
 </ul>
