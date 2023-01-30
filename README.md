@@ -79,7 +79,7 @@
 <ul dir="auto">
 <li><a href="https://validator.w3.org/" rel="nofollow">HTML Validator</a></li>
 <li><a href="https://validator.w3.org/" rel="nofollow">CSS Validator</a></li>
-<li><a href="https://jshint.com/" rel="nofollow">JS Hint</a></li>
+<li><a href="https://jshint.com/" rel="nofollow">JS Hint Validator</a></li>
 </ul>
 <h2>Testing</h2>
 <h3>Validator Testing</h3>
@@ -95,7 +95,7 @@ Tested  "404.html"
 <img src="assets/readme/404.png" alt="alt-text" style="max-width: 100%;">
 <li><a href="https://jigsaw.w3.org/" rel="nofollow">CSS Validator</a> was run several times during the project and picked up small syntax errors which were corrected. At the time of submission the css code successfully passed the validator with no errors.</li>
 <img src="assets/readme/css-validator.png" alt="alt-text" style="max-width: 100%;">
-<p dir="auto"><a href="https://jshint.com/" rel="nofollow">JS Hint</a> was used to check the two javascript files. No errors were found and the following metrics were returned:</p>
+<p dir="auto"><a href="https://jshint.com/" rel="nofollow">JS Hint</a> was used to check the javascript file. No errors were found and the following metrics were returned:</p>
 <ul dir="auto">
   <li>There are 17 functions in this file</li>
   <li>Function with the largest signature takes 4 arguments, while the median is 0.</li>
