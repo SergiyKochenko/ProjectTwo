@@ -158,10 +158,13 @@ CSS option - remove the display: none;<br>
 </ul>
 <h2>Credits</h2>
 <p dir="auto">All images, save the background image were created by the developer.</p>
-
 <h3>Bugs</h3>
 <p dir="auto">The following bug was found:</p>
 <p dir="auto">Mobiles 320x480px scaled down to scale(0.219) are not supported.</p>
+<p dir="auto">Error was found in the JavaScript code, - the messages about the results of the players' moves was not displayed correctly in the table.
+<br>
+The bug has been fixed by makeing the function not recylable.</p>
+<img src="assets/readme/not_recyclable_function.png" alt="alt-text" style="max-width: 100%;">
 <h3>Deployment</h3>
 <p dir="auto">The website was deployed using Replit and linked to Gitpot the  Gitpot to GitHub with all necessary commita and pusshes by following these steps on GitHub Pages:</p>
 <ol dir="auto">
