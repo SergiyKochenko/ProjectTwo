@@ -86,10 +86,13 @@
 <ul dir="auto">
 <li><a href="https://validator.w3.org/" rel="nofollow">HTML Validator</a> was run at several points during the project and small syntax errors were identified and fixed. At the final stage no errors or warnings were found.
 <br>
+  Tested "index.html":
   &nbsp;&nbsp;&nbsp;Warning: The inputmode attribute is not supported in all browsers. Please be sure to test, and consider using a polyfill, - Maintainer of the W3C HTML checker (validator) here. That message is just a warning message, not an error. And the reason we have the HTML checker emit that warning is, input type=date isn’t supported in desktop Safari or Internet Explorer, nor in versions of Firefox before Firefox 57, nor on Android before Android 4.4.
 </li>
 </ul>
 <img src="assets/readme/html-validator.png" alt="alt-text" style="max-width: 100%;">
+Tested  "404.html"
+<img src="assets/readme/404.png" alt="alt-text" style="max-width: 100%;">
 <li><a href="https://jigsaw.w3.org/" rel="nofollow">CSS Validator</a> was run several times during the project and picked up small syntax errors which were corrected. At the time of submission the css code successfully passed the validator with no errors.</li>
 <img src="assets/readme/css-validator.png" alt="alt-text" style="max-width: 100%;">
 <p dir="auto"><a href="https://jshint.com/" rel="nofollow">JS Hint</a> was used to check the two javascript files. No errors were found and the following metrics were returned:</p>
