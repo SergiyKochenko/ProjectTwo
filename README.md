@@ -13,6 +13,15 @@
 <ul dir="auto">
 <li>Play a fun and engaging numbers guessing game</li>
 <li>Test your general knowledge by guessing different numbers</li>
+<h2>Wireframes</h2>
+  <p>All Wireframes were designed for laptop/computer, and mobile display/.</p>
+<img src="assets/readme/wireframe_web1.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/wireframe_web2.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/wireframe_mobile1.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/wireframe_mobile2.png" alt="alt-text" style="max-width: 100%;">
+
+
+  
 </ul>
 <h2 dir="auto">Surface/Design</h2>
 <p dir="auto">&nbsp;&nbsp;&nbsp;The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age; from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults.</p>
