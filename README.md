@@ -77,19 +77,32 @@
 <li>CSS (Cascading Style Sheets) to style the website and make it look more. appealing to the user.</li>
 <li>JavaScript was used to provide interactivity to the application.</li>
 </ul>
-<h2>Technologies Used</h2>
-<p dir="auto">Git was used for version control.</p>
-<p dir="auto"><a href="https://www.gitpod.io/" rel="nofollow">Gitpod</a> was used for the IDE</p>
-<p dir="auto"><a href="https://fontawesome.com" rel="nofollow">Fontawesome</a> was used for the social media icons, map link and the arrow back to top.</p>
-<p dir="auto"><a href="https://www.google.com/intl/eu/chrome/" rel="nofollow">Google Chrome </a> Google Chrome was used for brings you the best of Google, Get the Browser by Google</p>
-<p dir="auto"><a href="https://replit.com/" rel="nofollow">Replit </a> was used for Coding</p>
-<p dir="auto"><a href="https://helpx.adobe.com/photoshop/using/whats-new.html" rel="nofollow">Adobe photoshop 2022 </a> was used for Icons creation</p>
-<p dir="auto"><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education</p>
+<h2>Frameworks Libraries and Programmes Used</h2>
+
 <ul dir="auto">
 <li><a href="https://validator.w3.org/" rel="nofollow">HTML Validator</a></li>
 <li><a href="https://validator.w3.org/" rel="nofollow">CSS Validator</a></li>
 <li><a href="https://jshint.com/" rel="nofollow">JS Hint Validator</a></li>
+<li><a href="https://beautifytools.com/javascript-validator.php" rel="nofollow">Beautify Tools</a> - used to beautify JavaScript code.</li>
+<li><a href="https://balsamiq.com/wireframes/" rel="nofollow">Balsamiq Wireframes</a> - for creating Wireframes for initial visual development.</li>
+  <li><a href="https://replit.com/" rel="nofollow">Replit </a> was used for Coding.</li>
+  <li><a href="https://helpx.adobe.com/photoshop/using/whats-new.html" rel="nofollow">Adobe photoshop 2022 </a> was used for Icons creation.</li>
+<li><a href="https://fontawesome.com" rel="nofollow">Fontawesome</a> was used for the social media icons, map link and the arrow back to top.</li>
+  <li><a href="https://www.google.com/intl/eu/chrome/" rel="nofollow">Google Chrome </a> Google Chrome was used for brings you the best of Google, Get the Browser by Google.</li>
+<li><a href="https://balsamiq.com/wireframes/" rel="nofollow">Balsamiq Wireframes</a> - for creating Wireframes for initial visual development.</li>
+<li><a href="https://coolors.co/" rel="nofollow">Coolors</a> - to create the colour scheme.</li>
+<li><a href="https://picresize.com/" rel="nofollow">picresize</a> - for editing images used for the game.</li>
+<li><a href="https://github.com/">GitHub</a> - used to host repository.</li>
+<li><a href="https://gitpod.io/workspaces" rel="nofollow">GitPod</a> - used to develop project and organise version control.</li>
+<li><a href="https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages">GitHub Pages</a> - used to deploy the site.</li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools" rel="nofollow">Google Chrome Development Tools</a> - for testing code on various device sizes during development and debugging.</li>
+<li><a href="https://beautifytools.com/javascript-validator.php" rel="nofollow">Beautify Tools</a> - used to beautify JavaScript code.</li>
+<li><a href="https://developers.google.com/web/tools/lighthouse" rel="nofollow">Lighthouse</a> - for testing code health, accessibility, speed and search engine optimisation.</li>
+  <li><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education.</li>
 </ul>
+
+
+
 <h2>Testing</h2>
 <h3>Validator Testing</h3>
 <ul dir="auto">
