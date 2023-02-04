@@ -204,6 +204,13 @@ footer{
 .socials a:hover {
   color: aqua;
 }
+.hidden {
+  color: #716a6a;
+  font-size: 12px;
+  text-transform: capitalize;
+  -webkit-text-stroke-width: thin;
+  flex: auto;
+}
 /* page 404 */
 #not-found {
   text-align: center;
@@ -273,6 +280,9 @@ footer{
   .game_results {
     width: 250px;
   }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   body {
@@ -295,6 +305,9 @@ footer{
   .item:nth-child(3) {
     flex-grow: 1;
   }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 780px) {
   .game {
@@ -303,6 +316,9 @@ footer{
   .play_text {
     font-size: 18px;
     height: 55px;
+  }
+  .hidden {
+    display: none;
   }
 }
 @media (max-width: 680px) {
@@ -325,6 +341,9 @@ footer{
   .player_count-btn {
     height: 40px;
   }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .game_results {
@@ -341,6 +360,9 @@ footer{
   }
   .items .item {
     width: 100%;
+  }
+  .hidden {
+    display: none;
   }
 }
 
