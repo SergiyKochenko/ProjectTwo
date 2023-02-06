@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 let step = true, //player turn
 	playerCountBalls = 10,
 	compCountBalls = 10,
