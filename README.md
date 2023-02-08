@@ -133,7 +133,7 @@ Tested  "404.html"
   <li>Function with the largest signature takes 4 arguments, while the median is 0.</li>
   <li>Largest function has 35 statements in it, while the median is 3</li>
   <li>The most complex funtion has a cyclomatic complexity value of 9 while the median is 1.</li>
-  <li>15 warnings see below img.</li>
+  <li>1 warning see below img.</li>
 </ul>
 <img src="assets/readme/jshint.png" alt="alt-text" style="max-width: 100%;">
 <ul dir="auto">
