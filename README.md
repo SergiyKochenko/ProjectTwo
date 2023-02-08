@@ -108,7 +108,7 @@
 <li><a href="https://developers.google.com/web/tools/chrome-devtools" rel="nofollow">Google Chrome Development Tools</a> - for testing code on various device sizes during development and debugging.</li>
 <li><a href="https://beautifytools.com/javascript-validator.php" rel="nofollow">Beautify Tools</a> - used to beautify JavaScript code.</li>
 <li><a href="https://developers.google.com/web/tools/lighthouse" rel="nofollow">Lighthouse</a> - for testing code health, accessibility, speed and search engine optimisation.</li>
-  <li><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education.</li>
+<li><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education.</li>
 </ul>
 
 
@@ -173,6 +173,11 @@ CSS option - remove the display: none;<br>
 <img src="assets/readme/test_mode.png" alt="alt-text" style="max-width: 100%;">
 
 </p>
+
+<h2 dir="auto">Manual testing</h2>
+<p dir="auto">&nbsp;&nbsp;&nbsp;The live link was sent to multiple people for feedback on functionality and design.<br>
+I played through the game myself repeatedly in search of errors and improvements.</p>
+
 <h2>Performing tests on various devices</h2>
 <p dir="auto">The website was tested on the following devices:</p>
 <ul dir="auto">
@@ -188,6 +193,7 @@ CSS option - remove the display: none;<br>
 <li>Mozilla Firefox</li>
 <li>Microsoft Edge</li>
 </ul>
+
 <h2>Credits</h2>
 <p dir="auto">All images, save the background image were created by the developer.</p>
 <h3>Bugs</h3>
