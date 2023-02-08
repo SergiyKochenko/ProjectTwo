@@ -24,12 +24,21 @@
   
 </ul>
 <h2 dir="auto">Surface/Design</h2>
+
+
 <p dir="auto">&nbsp;&nbsp;&nbsp;The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age; from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults.</p>
 
 <img src="assets/readme/design.png" alt="alt-text" style="max-width: 100%;">
 <img src="assets/readme/surface.png" alt="alt-text" style="max-width: 100%;">
 <img src="assets/readme/field_number.png" alt="alt-text" style="max-width: 100%;">
 <img src="assets/readme/odd_even_button.png" alt="alt-text" style="max-width: 100%;">
+
+
+<h3 dir="auto">Colour Scheme</h3>
+<p dir="auto">&nbsp;&nbsp;&nbsp;The colour scheme was chosen to tie in with the game, the colours were selected to stand out in contract to the background but not to distract the play from the game itself.</p>
+<img src="assets/readme/colors.png" alt="alt-text" style="max-width: 100%;">
+
+
 <h2>User Experience</h2>
 <h3>Target Audience</h3>
 <ul dir="auto">
@@ -70,6 +79,7 @@
 </ol>
 </ul>
 <img src="assets/readme/footer.png" alt="alt-text" style="max-width: 100%;">
+
 
 <h2>Languages Used</h2>
 <ul dir="auto">
