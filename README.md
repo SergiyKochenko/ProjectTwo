@@ -179,20 +179,35 @@ CSS option - remove the display: none;<br>
 I played through the game myself repeatedly in search of errors and improvements.</p>
 
 <h2>Performing tests on various devices</h2>
-<p dir="auto">The website was tested on the following devices:</p>
+<p dir="auto">The website was tested on the following real devices:</p>
 <ul dir="auto">
 <li>Apple iPhone 12 Pro Max iOS 16 (16.0.2)</li>
 <li>Samsung (samsung SM-T285) Android 5.1.1 (22)</li>
 <li>LENOVO (Lenovo Lenovo TB-X606X) Android 10 (29)</li>
 <li>Samsung (samsung SM-T505) Android 11 (30)</li>
 </ul>
+<h3>Also used a simulator of mobile devices on BrowserStack web site:</h3>
+<img src="assets/readme/Screenshot_8.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_9.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_1.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_2.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_3.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_4.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_5.png" alt="alt-text" style="max-width: 100%;">
+<img src="assets/readme/Screenshot_6.png" alt="alt-text" style="max-width: 100%;">
+
+
 <h2>Browser Compatability</h2>
 <h3>The website was tested on the following browsers:</h3>
 <ul dir="auto">
-<li>Google Chrome</li>
-<li>Mozilla Firefox</li>
-<li>Microsoft Edge</li>
+<li>Google Chrome v. 109 and earlier versions</li>
+<li>Mozilla Firefox v. 109 and earlier versions</li>
+<li>Microsoft Edge v. 109 and earlier versions</li>
+<li>Yandex v. 14.12 and earlier versions</li>
+<li>Opera v. 95 and earlier versions</li>
+<li>Safari v. 5.1 and earlier versions</li>
 </ul>
+<img src="assets/readme/Screenshot_7.png" alt="alt-text" style="max-width: 100%;">
 
 <h2>Credits</h2>
 <p dir="auto">All images, save the background image were created by the developer.</p>
