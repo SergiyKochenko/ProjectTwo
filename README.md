@@ -109,6 +109,9 @@
 <li><a href="https://beautifytools.com/javascript-validator.php" rel="nofollow">Beautify Tools</a> - used to beautify JavaScript code.</li>
 <li><a href="https://developers.google.com/web/tools/lighthouse" rel="nofollow">Lighthouse</a> - for testing code health, accessibility, speed and search engine optimisation.</li>
 <li><a href="https://www.youtube.com/" rel="nofollow">You Tube</a> was used for tutorial education.</li>
+<li><a href="https://live.browserstack.com/" rel="nofollow">BrowserStack</a> was used a simulator of mobile devices on BrowserStack Live web site:</li>
+
+
 </ul>
 
 
