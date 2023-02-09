@@ -212,6 +212,11 @@ I played through the game myself repeatedly in search of errors and improvements
 </ul>
 <img src="assets/readme/Screenshot_7.png" alt="alt-text" style="max-width: 100%;">
 
+<br>
+<h2>Automation testing using Selenium IDE</h2>
+<img src="assets/readme/Selenium IDE.png" alt="alt-text" style="max-width: 100%;">
+<br>
+<br>
 <h2>Credits</h2>
 <p dir="auto">All images, save the background image were created by the developer.</p>
 <h3>Bugs</h3>
