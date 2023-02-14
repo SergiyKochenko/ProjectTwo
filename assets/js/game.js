@@ -80,8 +80,8 @@ function compGuess() {
 	//rendom choice of even or odd.
 	compEvenOdd = Math.round(Math.random());
 	console.log('computer bet -' + guessCompBalls);
-	if (compEvenOdd) console.log("Computer's chose odd"); //to test see developers tool console
-	else console.log("Computer's chose even"); //to test developers tool console
+	if (compEvenOdd);
+	else; 
 }
 
 //determination of the players' move
