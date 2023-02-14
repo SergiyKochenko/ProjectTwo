@@ -79,14 +79,14 @@ function compGuess() {
 	guessCompBalls = Math.round(Math.random() * (compCountBalls - 1) + 1);
 	//rendom choice of even or odd.
 	compEvenOdd = Math.round(Math.random());
-	console.log('computer bet -' + guessCompBalls);
+	'computer bet -' + guessCompBalls;
 	if (compEvenOdd);
 	else; 
 }
 
 //determination of the players' move
 function stepPlayers(step) {
-	console.log(step);
+	step;
 	compGuess(); //guesses the computer
 	if (step) { //if the player's move
 		playText.innerHTML = messages.step_456;
