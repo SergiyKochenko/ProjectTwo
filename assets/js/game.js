@@ -81,7 +81,7 @@ function compGuess() {
 	compEvenOdd = Math.round(Math.random());
 	'computer bet -' + guessCompBalls;
 	if (compEvenOdd);
-	else; 
+	else;
 }
 
 //determination of the players' move
